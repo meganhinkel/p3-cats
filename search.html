@@ -21,28 +21,31 @@
         <a class="navbar-brand" href="index.html"><img src = "media/wintergosolo-tiktok.gif"></img></a>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="fullBreedList.html">Full Breed List</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="search.html">Search Breed</a>
+            <a class="nav-link active" aria-current="page" href="search.html">Search Breed</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
     <main class="col">
-      <h1 class="display-1" id="main-title">Home Page</h1>
-      <p class="lead">Either search for a cat breed or go to the full list of cat breeds to learn more about a specific breed! Then input your zip code and click the button to find adoptable cats of that breed near you!</p>
-      <video controls autoplay>
-        <source src="media/cat-meowing.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <form class="hidden" role="search" id="zip-search">
+      <h1 class="display-1" id="main-title">Search for a breed!</h1>
+      
+      <form class="d-flex" role="search" id="top-search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="query">
-        <button class="btn btn-outline-success" type="submit">Input zip</button>
+        <button class="btn btn-outline-success" type="submit">Search for breed</button>
+      </form>
+
+      <p class="lead">Search for a breed to learn more about! (Spelling must be correct) Then input your zip code and click the button to find adoptable cats of that breed near you!</p>
+      
+      <form class="hidden" role="search" id="zip-search">
+        <input class="form-control me-2" type="search" placeholder="Input zip code" aria-label="Search" name="query">
+        <button class="btn btn-outline-success" type="submit">Submit</button>
       </form>
       <button id="findCat" class ="hidden">Find this breed of cat for adoption</button>
     </main>
@@ -50,5 +53,6 @@
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="scripts/search.js"></script>
 </body>
 </html>
